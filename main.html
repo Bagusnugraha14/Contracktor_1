@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tukang Bangunan Banjarmasin &amp; Banjarbaru | Jasa Bangunan</title>
+  <meta name="description" content="Informasi jasa bangunan dan renovasi di Banjarmasin dan Banjarbaru. Lihat dokumentasi pekerjaan dan hubungi kami melalui WhatsApp untuk berkonsultasi.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23F5C400'><path d='M3 21h18v-2H3v2zm3-4h12v-2H6v2zm2-4h8v-2H8v2zm2-4h4V7h-4v2zm7-5H5L3 5v1h18V5l-2-3z'/></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus Jakarta Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Skip Link for Accessibility (R-32) -->
+  <a href="#main-content" class="skip-link">Loncat ke Konten Utama</a>
+
+  <!-- ======================================================================
+       01. HEADER & NAVIGATION (Centered links on desktop per Section 04)
+       ====================================================================== -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      
+      <!-- Brand Wordmark (Left) -->
+      <div class="brand-wrapper">
+        <a href="#home" class="brand-link" aria-label="Tukang Bangunan Banjarmasin Banjarbaru Beranda">
+          <span class="brand-name">TUKANG BANGUNAN</span>
+          <span class="brand-sub">Banjarmasin • Banjarbaru</span>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation (Centered Horizontally) -->
+      <nav class="nav-desktop" aria-label="Navigasi Utama">
+        <ul class="nav-desktop-list">
+          <li><a href="#home" class="nav-desktop-link active">Home</a></li>
+          <li><a href="#tentang" class="nav-desktop-link">Tentang</a></li>
+          <li><a href="#pengalaman" class="nav-desktop-link">Pengalaman</a></li>
+          <li><a href="#layanan" class="nav-desktop-link">Layanan</a></li>
+          <li><a href="#ulasan" class="nav-desktop-link">Ulasan</a></li>
+          <li><a href="#kontak" class="nav-desktop-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action CTA & Mobile Toggle -->
+      <div class="header-actions">
+        <a href="https://wa.me/6285752986057?text=Halo%2C%20saya%20ingin%20berkonsultasi%20mengenai%20jasa%20bangunan%20di%20Banjarmasin%20%2F%20Banjarbaru.%20Boleh%20saya%20bertanya%20tentang%20layanan%20dan%20estimasi%20biayanya%3F" 
+           class="btn btn-wa-compact header-wa-cta" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           aria-label="Konsultasi cepat via WhatsApp di 0857-5298-6057">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button (R-32) -->
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Buka menu navigasi">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop & Menu -->
+  <div class="mobile-nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Navigasi Menu Mobile">
+    <div class="mobile-nav-header">
+      <span class="mobile-nav-title">Menu Navigasi</span>
+      <button class="mobile-nav-close" id="mobileNavClose" aria-label="Tutup menu navigasi">
+        <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-list">
+      <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+      <li><a href="#tentang" class="mobile-nav-link">Tentang Kami</a></li>
+      <li><a href="#pengalaman" class="mobile-nav-link">Dokumentasi Pengalaman</a></li>
+      <li><a href="#layanan" class="mobile-nav-link">Pilihan Layanan</a></li>
+      <li><a href="#ulasan" class="mobile-nav-link">Ulasan Pelanggan</a></li>
+      <li><a href="#kontak" class="mobile-nav-link">Kontak WhatsApp</a></li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <a href="https://wa.me/6285752986057?text=Halo%2C%20saya%20ingin%20berkonsultasi%20mengenai%20jasa%20bangunan%20di%20Banjarmasin%20%2F%20Banjarbaru.%20Boleh%20saya%20bertanya%20tentang%20layanan%20dan%20estimasi%20biayanya%3F" 
+         class="btn btn-primary" 
+         style="width: 100%;" 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         aria-label="Konsultasi sekarang melalui WhatsApp">
+        <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+        <span>Konsultasi WhatsApp</span>
+      </a>
+      <p class="mobile-nav-area-note">Area: Banjarmasin &amp; Banjarbaru</p>
+    </div>
+  </nav>
+
+  <!-- ======================================================================
+       MAIN CONTENT
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- ====================================================================
+         02. HERO SECTION (100svh / 100vh with Video Background & Poster)
+         ==================================================================== -->
+    <section class="hero-section" id="home" aria-label="Beranda Utama">
+      <div class="hero-media">
+        <video class="hero-video" 
+               id="heroVideo" 
+               autoplay 
+               muted 
+               loop 
+               playsinline 
+               poster="assets/images/hero-poster.jpg" 
+               aria-label="Dokumentasi pengerjaan tukang bangunan di lapangan">
+          <source src="assets/videos/hero-construction.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <p class="hero-eyebrow">JASA BANGUN &amp; RENOVASI • BANJARMASIN, BANJARBARU</p>
+        <h1 class="hero-title">Bangun dengan Tenang.<br>Hasilkan dengan Yakin.</h1>
+        <p class="hero-lead">Jasa bangunan yang mengutamakan kerapian pengerjaan, ketelitian, dan kepercayaan di setiap proyek.</p>
+        
+        <div class="hero-cta-group">
+          <a href="https://wa.me/6285752986057?text=Halo%2C%20saya%20ingin%20berkonsultasi%20mengenai%20jasa%20bangunan%20di%20Banjarmasin%20%2F%20Banjarbaru.%20Boleh%20saya%20bertanya%20tentang%20layanan%20dan%20estimasi%20biayanya%3F" 
+             class="btn btn-primary" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             id="heroPrimaryCta"
+             aria-label="Konsultasi proyek bangunan via WhatsApp">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            </svg>
+            <span>Konsultasi via WhatsApp</span>
+          </a>
+
+          <a href="#pengalaman" class="btn btn-secondary" id="heroSecondaryCta">
+            <span>Lihat Hasil Pekerjaan</span>
+          </a>
+        </div>
+
+        <div class="hero-location-tag">
+          <span class="hero-location-dot"></span>
+          <span>Melayani pengerjaan langsung di Banjarmasin &amp; Banjarbaru</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         03. ABOUT US SECTION (Editorial Two-Column with Authentic Photo)
+         ==================================================================== -->
+    <section class="about-section section-padding" id="tentang" aria-label="Tentang Kami">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Left: Authentic Photo Card -->
+          <div class="about-media-wrapper">
+            <div class="about-image-card">
+              <img src="assets/images/about-owner.jpg" 
+                   alt="Mandor dan kepala tukang bangunan dengan catatan kerja di lokasi proyek perumahan" 
+                   class="about-image" 
+                   width="600" 
+                   height="450" 
+                   loading="lazy">
+              <div class="about-image-caption">
+                <span class="about-caption-badge">Pengawasan Lapangan Langsung</span>
+                <span>Dokumentasi Kerja Nyata</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Editorial Narrative Content -->
+          <div class="about-content">
+            <span class="section-eyebrow">TENTANG KAMI</span>
+            <h2 class="section-title">Pengerjaan Rapi, Komunikasi Jelas.</h2>
+            
+            <p class="about-text">
+              Setiap pekerjaan dimulai dari memahami kebutuhan pelanggan. Kami berupaya menghadirkan pengerjaan yang rapi, komunikasi yang jelas, dan hasil yang sesuai dengan kesepakatan.
+            </p>
+
+            <p class="about-text">
+              Bagi kami, proyek bangunan adalah amanah pemilik rumah. Dari pemilihan bahan yang tepat hingga ketelitian pengerjaan setiap sudut ruangan, kami memastikan seluruh proses berjalan transparan tanpa ada yang ditutup-tutupi.
+            </p>
+
+            <ul class="about-values-list">
+              <li class="about-value-item">
+                <span class="about-value-bullet">✓</span>
+                <div class="about-value-text">
+                  <strong>Kerapian Hasil &amp; Presisi Sudut</strong>
+                  <p>Fokus pada ketelitian nat keramik, kelurusan plesteran dinding, dan kerapian akhir yang sedap dipandang.</p>
+                </div>
+              </li>
+              <li class="about-value-item">
+                <span class="about-value-bullet">✓</span>
+                <div class="about-value-text">
+                  <strong>Komunikasi Terbuka &amp; Musyawarah</strong>
+                  <p>Setiap penyesuaian lapangan dibicarakan terlebih dahulu dengan pemilik agar tidak terjadi salah paham.</p>
+                </div>
+              </li>
+              <li class="about-value-item">
+                <span class="about-value-bullet">✓</span>
+                <div class="about-value-text">
+                  <strong>Wilayah Layanan Terjangkau</strong>
+                  <p>Fokus melayani daerah Banjarmasin, Banjarbaru, dan kawasan sekitarnya untuk kemudahan koordinasi.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div>
+              <a href="https://wa.me/6285752986057?text=Halo%2C%20saya%20ingin%20konsultasi%20mengenai%20proyek%20bangunan%20dengan%20tukang." 
+                 class="btn btn-outline-dark" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 aria-label="Tanya langsung kepada tukang pelaksana via WhatsApp">
+                <span>Tanya Langsung ke Tukang</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         04. EXPERIENCE SECTION (Asymmetric Project Showcase)
+         ==================================================================== -->
+    <section class="experience-section section-padding" id="pengalaman" aria-label="Dokumentasi Pekerjaan">
+      <div class="container">
+        
+        <div class="section-header centered">
+          <span class="section-eyebrow">DOKUMENTASI PEKERJAAN</span>
+          <h2 class="section-title">Pengalaman yang Terlihat dari Hasilnya.</h2>
+          <p class="section-subtitle">Kualitas pertukangan dapat dinilai dari ketelitian detail akhir. Berikut dokumentasi pengerjaan nyata yang kami tangani di lapangan.</p>
+        </div>
+
+        <div class="experience-grid">
+
+          <!-- Project 1: Featured Tile Installation -->
+          <article class="project-card experience-card-featured">
+            <div class="project-image-box">
+              <img src="assets/images/project-01.jpg" 
+                   alt="Pemasangan lantai granit dan keramik rapi dengan nat presisi dan permukaan rata" 
+                   class="project-image" 
+                   width="700" 
+                   height="450" 
+                   loading="lazy">
+              <span class="project-category-badge">Pemasangan Keramik &amp; Granit</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Pemasangan Keramik dan Granit Presisi</h3>
+              <p class="project-desc">
+                Pengerjaan lantai keramik dan granit dengan tingkat kerataan permukaan tinggi, jarak nat konsisten, serta pemotongan pinggiran yang rapi. Cocok untuk ruang utama, teras, maupun kamar mandi.
+              </p>
+              <div class="project-meta">
+                <span class="project-location">
+                  <svg class="icon-svg" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  Banjarmasin &amp; Banjarbaru
+                </span>
+                <span>Pengerjaan Detail</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Residential Renovation -->
+          <article class="project-card experience-card-regular">
+            <div class="project-image-box">
+              <img src="assets/images/project-02.jpg" 
+                   alt="Hasil renovasi rumah tinggal modern minimalis dengan carport dan fasad rapi" 
+                   class="project-image" 
+                   width="500" 
+                   height="320" 
+                   loading="lazy">
+              <span class="project-category-badge">Renovasi Residensial</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Renovasi Rumah Tinggal &amp; Fasad</h3>
+              <p class="project-desc">
+                Peremajaan tampak depan rumah, pembuatan kanopi carport, perapihan dinding eksterior, serta penyesuaian tata letak agar rumah kembali nyaman dihuni.
+              </p>
+              <div class="project-meta">
+                <span class="project-location">
+                  <svg class="icon-svg" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  Banjarbaru
+                </span>
+                <span>Renovasi Eksterior</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Interior Finishing -->
+          <article class="project-card experience-card-regular">
+            <div class="project-image-box">
+              <img src="assets/images/project-03.jpg" 
+                   alt="Finishing interior rumah berupa plafon bertingkat, sekat kayu, dan cat dinding halus" 
+                   class="project-image" 
+                   width="500" 
+                   height="320" 
+                   loading="lazy">
+              <span class="project-category-badge">Pekerjaan Interior</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Plafon Gypsum &amp; Finishing Dinding</h3>
+              <p class="project-desc">
+                Pemasangan plafon gypsum drop ceiling dengan lampu tanam, partisi sekat ruangan, dan pengecatan interior halus dengan sambungan rapat dan rapi.
+              </p>
+              <div class="project-meta">
+                <span class="project-location">
+                  <svg class="icon-svg" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  Banjarmasin
+                </span>
+                <span>Finishing Interior</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="experience-note">
+          <p class="experience-note-text">
+            Seluruh foto mendokumentasikan pengerjaan tukang nyata di lapangan tanpa rekayasa.
+          </p>
+          <a href="https://wa.me/6285752986057?text=Halo%2C%20saya%20ingin%20tanya%20mengenai%20contoh%20proyek%20lainnya%20yang%20pernah%20dikerjakan." 
+             class="btn btn-primary" 
+             style="padding: 0.5rem 1.25rem; font-size: 0.875rem;" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             aria-label="Tanya foto dokumentasi pekerjaan lainnya via WhatsApp">
+            <span>Tanya Dokumentasi Lainnya</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         05. SERVICES SECTION (Clean Grid with Contextual WhatsApp Actions)
+         ==================================================================== -->
+    <section class="services-section section-padding" id="layanan" aria-label="Layanan Bangunan">
+      <div class="container">
+
+        <div class="section-header centered">
+          <span class="section-eyebrow">PILIHAN LAYANAN</span>
+          <h2 class="section-title">Apa yang Bisa Kami Kerjakan?</h2>
+          <p class="section-subtitle">Layanan pengerjaan bangunan dan renovasi yang dapat disesuaikan dengan kebutuhan proyek Anda di Banjarmasin dan Banjarbaru.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Service 1: Pembangunan Rumah -->
+          <div class="service-card">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-title">Pembangunan Rumah</h3>
+            <p class="service-desc">
+              Pengerjaan konstruksi rumah tinggal baru dari pondasi, struktur tiang, pasangan bata, cor beton, hingga rangka atap sesuai rancangan dan kesepakatan.
+            </p>
+            <a href="https://wa.me/6285752986057?text=Halo%2C%20saya%20ingin%20konsultasi%20mengenai%20pembangunan%20rumah%20baru%20di%20Banjarmasin%20%2F%20Banjarbaru.%20Boleh%20info%20proses%20dan%20estimasinya%3F" 
+               class="btn btn-service" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               aria-label="Konsultasi jasa pembangunan rumah via WhatsApp">
+              <span>Konsultasi Bangun Rumah</span>
+            </a>
+          </div>
+
+          <!-- Service 2: Renovasi Rumah -->
+          <div class="service-card">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Renovasi Rumah</h3>
+            <p class="service-desc">
+              Perbaikan dan penataan ulang bagian rumah eksisting, penambahan kamar atau lantai, renovasi fasad tampak depan, perbaikan dapur, dan kamar mandi.
+            </p>
+            <a href="https://wa.me/6285752986057?text=Halo%2C%20saya%20ingin%20konsultasi%20mengenai%20renovasi%20rumah%20di%20Banjarmasin%20%2F%20Banjarbaru.%20Boleh%20tanya%20estimasi%20pengerjaannya%3F" 
+               class="btn btn-service" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               aria-label="Konsultasi jasa renovasi rumah via WhatsApp">
+              <span>Konsultasi Renovasi Rumah</span>
+            </a>
+          </div>
+
+          <!-- Service 3: Pemasangan Keramik -->
+          <div class="service-card">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+            </div>
+            <h3 class="service-title">Pemasangan Keramik</h3>
+            <p class="service-desc">
+              Pemasangan keramik lantai, dinding, granit, keramik kamar mandi, hingga backsplash dapur dengan fokus pada nat yang rapi dan leveling rata.
+            </p>
+            <a href="https://wa.me/6285752986057?text=Halo%2C%20saya%20tertarik%20dengan%20jasa%20pemasangan%20keramik%20di%20Banjarmasin%20%2F%20Banjarbaru.%20Bisa%20konsultasi%20luas%20area%20dan%20estimasinya%3F" 
+               class="btn btn-service" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               aria-label="Konsultasi jasa pemasangan keramik via WhatsApp">
+              <span>Konsultasi Pasang Keramik</span>
+            </a>
+          </div>
+
+          <!-- Service 4: Pekerjaan Interior -->
+          <div class="service-card">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h20"></path>
+                <path d="M21 3v18H3V3"></path>
+                <path d="M10 8h4"></path>
+                <path d="M10 12h4"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Pekerjaan Interior</h3>
+            <p class="service-desc">
+              Pemasangan plafon gypsum, drop ceiling, sekat partisi ruangan, acian dinding halus, dan pengecatan ruangan dengan finishing rata dan rapi.
+            </p>
+            <a href="https://wa.me/6285752986057?text=Halo%2C%20saya%20ingin%20tanya%20jasa%20pekerjaan%20interior%20(plafon%2C%20sekat%2C%20finishing)%20di%20Banjarmasin%20%2F%20Banjarbaru." 
+               class="btn btn-service" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               aria-label="Konsultasi jasa pekerjaan interior via WhatsApp">
+              <span>Konsultasi Interior</span>
+            </a>
+          </div>
+
+          <!-- Service 5: Perbaikan Bangunan -->
+          <div class="service-card">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77-3.77-3.77z"></path>
+                <path d="M4.5 19.5l6-6"></path>
+                <path d="M9 18l-4.5 1.5 1.5-4.5"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Perbaikan Bangunan</h3>
+            <p class="service-desc">
+              Penanganan kebocoran atap dan talang air, perbaikan dinding retak, penggantian kusen, penambalan plesteran, dan perbaikan kerusakan bangunan lainnya.
+            </p>
+            <a href="https://wa.me/6285752986057?text=Halo%2C%20saya%20butuh%20perbaikan%20bangunan%20%2F%20atap%20bocor%20%2F%20dinding%20retak%20di%20Banjarmasin%20%2F%20Banjarbaru." 
+               class="btn btn-service" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               aria-label="Konsultasi perbaikan kerusakan bangunan via WhatsApp">
+              <span>Konsultasi Perbaikan</span>
+            </a>
+          </div>
+
+          <!-- Service 6: Pekerjaan Bangunan Lainnya -->
+          <div class="service-card">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Pekerjaan Bangunan Lainnya</h3>
+            <p class="service-desc">
+              Pengerjaan pagar, rabat semen halaman atau carport, saluran sanitasi air, dan berbagai permintaan pekerjaan pertukangan spesifik sesuai kesepakatan.
+            </p>
+            <a href="https://wa.me/6285752986057?text=Halo%2C%20saya%20ingin%20berkonsultasi%20mengenai%20pekerjaan%20konstruksi%20lainnya%20di%20Banjarmasin%20%2F%20Banjarbaru." 
+               class="btn btn-service" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               aria-label="Konsultasi pekerjaan konstruksi lainnya via WhatsApp">
+              <span>Tanya Pekerjaan Lainnya</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         06. CUSTOMER REVIEWS SECTION (Accurate Verified Google Maps Data)
+         ==================================================================== -->
+    <section class="reviews-section section-padding" id="ulasan" aria-label="Ulasan Pelanggan">
+      <div class="container">
+
+        <div class="section-header centered">
+          <span class="section-eyebrow">ULASAN PELANGGAN</span>
+          <h2 class="section-title">Kepercayaan yang Dibangun dari Pekerjaan.</h2>
+          
+          <div class="rating-summary-pill">
+            <div class="stars-row" aria-label="Rating 5 dari 5 bintang">
+              <svg class="icon-svg" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="icon-svg" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="icon-svg" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="icon-svg" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="icon-svg" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span>Rating 5.0 di Google Maps</span>
+          </div>
+
+          <p class="section-subtitle">Berikut ulasan nyata dari pelanggan yang telah menggunakan jasa kami.</p>
+        </div>
+
+        <div class="reviews-grid">
+
+          <!-- Verified Review 1: Siti Maisarah -->
+          <article class="review-card">
+            <div>
+              <div class="review-quote-mark" aria-hidden="true">&ldquo;</div>
+              <p class="review-text">
+                "Hasilnya sangat memuaskan, dan rapi pemasangan keramik"
+              </p>
+            </div>
+            <div class="review-author-box">
+              <div class="author-avatar" aria-hidden="true">SM</div>
+              <div class="author-details">
+                <span class="author-name">Siti Maisarah</span>
+                <span class="author-source">
+                  <svg class="icon-svg" style="width: 0.875rem; height: 0.875rem; color: #E6B500;" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  Ulasan Terverifikasi Google Maps
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Verified Review 2: Sayedi -->
+          <article class="review-card">
+            <div>
+              <div class="review-quote-mark" aria-hidden="true">&ldquo;</div>
+              <p class="review-text">
+                "Amanah tukang nya mantab"
+              </p>
+            </div>
+            <div class="review-author-box">
+              <div class="author-avatar" aria-hidden="true">S</div>
+              <div class="author-details">
+                <span class="author-name">Sayedi</span>
+                <span class="author-source">
+                  <svg class="icon-svg" style="width: 0.875rem; height: 0.875rem; color: #E6B500;" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  Ulasan Terverifikasi Google Maps
+                </span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="reviews-disclaimer">
+          Dokumentasi ulasan ditampilkan sesuai teks asli dari profil Google Maps tanpa rekayasa tambahan.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         07. FINAL WHATSAPP CTA SECTION
+         ==================================================================== -->
+    <section class="cta-section" id="kontak" aria-label="Kontak dan Konsultasi WhatsApp">
+      <div class="container">
+        <div class="cta-box">
+          <span class="cta-eyebrow">PUNYA RENCANA BANGUN ATAU RENOVASI?</span>
+          <h2 class="cta-title">Ceritakan Rencana Anda.</h2>
+          <p class="cta-lead">
+            Diskusikan kebutuhan bangunan Anda dan tanyakan estimasi pengerjaan secara langsung tanpa biaya konsultasi awal.
+          </p>
+
+          <div class="cta-btn-wrapper">
+            <a href="https://wa.me/6285752986057?text=Halo%2C%20saya%20ingin%20berkonsultasi%20mengenai%20jasa%20bangunan.%20Boleh%20saya%20bertanya%20tentang%20layanan%20dan%20estimasi%20biayanya%3F" 
+               class="btn btn-cta-dark" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               id="finalWaCta"
+               aria-label="Hubungi via WhatsApp di nomor 0857-5298-6057">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+              <span>Hubungi via WhatsApp (0857-5298-6057)</span>
+            </a>
+
+            <div class="cta-info-badge">
+              <svg class="icon-svg" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Melayani Area: Banjarmasin &amp; Banjarbaru</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       08. FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Col 1: Brand & Summary -->
+        <div class="footer-col-brand">
+          <p class="footer-brand-title">TUKANG BANGUNAN</p>
+          <p class="footer-brand-tag">Banjarmasin • Banjarbaru</p>
+          <p>
+            Jasa pertukangan bangunan dan renovasi rumah dengan fokus pada kerapian pengerjaan, ketelitian, dan kejujuran di setiap proyek.
+          </p>
+        </div>
+
+        <!-- Col 2: Wilayah Layanan -->
+        <div>
+          <p class="footer-heading">Wilayah Layanan</p>
+          <p class="footer-contact-item">Kota Banjarmasin</p>
+          <p class="footer-contact-item">Kota Banjarbaru</p>
+          <p class="footer-contact-item" style="font-size: 0.8125rem; color: rgba(255,255,255,0.5);">Kalimantan Selatan</p>
+        </div>
+
+        <!-- Col 3: Kontak WhatsApp -->
+        <div>
+          <p class="footer-heading">Kontak Langsung</p>
+          <p class="footer-contact-item">WhatsApp / Telepon:</p>
+          <a href="https://wa.me/6285752986057?text=Halo%2C%20saya%20ingin%20berkonsultasi%20mengenai%20jasa%20bangunan." 
+             class="footer-contact-link" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             aria-label="Kirim pesan WhatsApp ke 0857-5298-6057">
+            <span>0857-5298-6057</span>
+          </a>
+          <p class="footer-contact-item" style="font-size: 0.8125rem; color: rgba(255,255,255,0.5); margin-top: 0.5rem;">
+            Respon konsultasi langsung oleh tukang pelaksana.
+          </p>
+        </div>
+
+        <!-- Col 4: Quick Nav -->
+        <div>
+          <p class="footer-heading">Navigasi</p>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#tentang" class="footer-link">Tentang</a></li>
+            <li><a href="#pengalaman" class="footer-link">Pengalaman</a></li>
+            <li><a href="#layanan" class="footer-link">Layanan</a></li>
+            <li><a href="#ulasan" class="footer-link">Ulasan</a></li>
+            <li><a href="#kontak" class="footer-link">Kontak</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p id="copyrightText">&copy; <span id="currentYear">2026</span> Tukang Bangunan Banjarmasin Banjarbaru. Seluruh hak cipta dilindungi.</p>
+        <p>Profil resmi jasa bangunan lokal Banjarmasin &amp; Banjarbaru.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+</html>
